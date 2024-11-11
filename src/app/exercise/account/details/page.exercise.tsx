@@ -11,7 +11,9 @@ export default function Page() {
         
         📑 Le lien vers la doc https://nextjs.org/docs/pages/api-reference/components/link
         */}
-        <Link href="/exercise/account">Page Account</Link>
+        <Link href="/exercise/account" scroll={false}>
+          Page Account
+        </Link>
       </div>
     </div>
   )
