@@ -8,7 +8,7 @@ Détaille ce que tu as appris ici, sur une page [Notion](https://go.mikecode
 
 ## Comprendre
 
-Il existe plusieurs manières d’ajouter du style dans une application `React`/`Next`, les plus courantes sont via : 
+Il existe plusieurs manières d’ajouter du style dans une application `React`/`Next`, les plus courantes sont via :
 
 - Global Styles
 - `CSS` modules
@@ -33,7 +33,7 @@ Dans un premier temps avec le Global Style du fichier `globals.css` nous avons a
 Ensuite ajoute un style avec `tailwind` pour que le lien `<Link>` ait un style de bouton
 
 ```tsx
-"rounded border border-gray-400 bg-white px-4 py-2 font-bold text-gray-800 hover:bg-gray-100"
+'rounded border border-gray-400 bg-white px-4 py-2 font-bold text-gray-800 hover:bg-gray-100'
 ```
 
 Fichiers
@@ -44,17 +44,14 @@ Fichiers
 
 ### 1. 🚀 CSS Module
 
-CSS Module permet d’éviter les collisions de noms (contrairement au style global). Pour fonctionner il faut créer un fichier `‘.module.css’` et l’importer. Exemple 
+CSS Module permet d’éviter les collisions de noms (contrairement au style global). Pour fonctionner il faut créer un fichier `‘.module.css’` et l’importer. Exemple
 
 ```tsx
 import styles from './Button.module.css'
- 
+
 export function Button() {
   return (
-    <button
-      type="button"
-      className={styles.error}
-    >
+    <button type="button" className={styles.error}>
       Destroy
     </button>
   )
@@ -69,10 +66,10 @@ Dans cet exercice nous avons repris la classe `title` mais cette fois-ci à 36px
 }
 ```
 
-Applique cette classe sur 
+Applique cette classe sur
 
 ```tsx
-  <p>Je suis un développeur FullStack Next</p>
+<p>Je suis un développeur FullStack Next</p>
 ```
 
 <aside>
@@ -90,7 +87,7 @@ Il arrive souvent dans une application d’avoir besoin d’appliquer du style d
 
 ```tsx
 import clsx from 'clsx';
- 
+
 export default function OrderStatus({ status }: { status: string }) {
   return (
     <span
@@ -106,9 +103,9 @@ export default function OrderStatus({ status }: { status: string }) {
 )}
 ```
 
-Dans cet exercice bonus tu vas devoir adapter la page `About` et appliquer un style conditionnel `text-red-500` si l’utilisateur est un admin sur le texte  `Je suis un développeur FullStack Next`. 
+Dans cet exercice bonus tu vas devoir adapter la page `About` et appliquer un style conditionnel `text-red-500` si l’utilisateur est un admin sur le texte `Je suis un développeur FullStack Next`.
 
-🤖 Utilise le code ci-dessous pour avoir un admin de manière aléatoire et utilise `isAdmin` pour faire du rendu conditionnel 
+🤖 Utilise le code ci-dessous pour avoir un admin de manière aléatoire et utilise `isAdmin` pour faire du rendu conditionnel
 
 ```tsx
 const idAdmin = Math.random() > 0.5
@@ -124,11 +121,11 @@ Fichiers
 
 ## Ils vont t’aider
 
-- **🐶  Mowgli le Chien** : *Mowgli te guidera dans chaque exercice.*
-- **🤖  Ash le Robot** : *Ash le Robot te donnera du code utile.*
-- **🚀 Julia La roquette** : *Julia te donnera des défis supplémentaires.*
-- **⛏️ Hulk le Marteau** : *Quand du code à supprimer est présent*
-- **👨‍✈️ Hugo le chef de projet** : *Va t'aider sur les spécifications du projet*
+- **🐶 Mowgli le Chien** : _Mowgli te guidera dans chaque exercice._
+- **🤖 Ash le Robot** : _Ash le Robot te donnera du code utile._
+- **🚀 Julia La roquette** : _Julia te donnera des défis supplémentaires._
+- **⛏️ Hulk le Marteau** : _Quand du code à supprimer est présent_
+- **👨‍✈️ Hugo le chef de projet** : _Va t'aider sur les spécifications du projet_
 
 ## 🐜 Feedback
 
