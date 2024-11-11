@@ -12,12 +12,12 @@ Lorsqu’un développeur écrit du code, il a pour but d’être exécuté quelq
 
 `React` est historiquement une librairie Javascript qui est conçue pour interagir avec le DOM (dans le navigateur) mais pour des raisons de performances, d’optimisation, de SEO, des techniques de génération côté backend ont apparu, jusqu'à la proposition d’un RFC en 2020
 
-📑 Une RFC : [React Server Component](https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md) 
+📑 Une RFC : [React Server Component](https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md)
 
 - Server Components **run only on the server and have zero impact on bundle-size**.
 - Server Components **can access server-side data sources.**
 
-Selon `Vercel` : *React Server Components allow you to write UI that can be rendered and optionally cached on the server. In Server Components, component logic such as data fetching and database mutations is executed exclusively on the server*
+Selon `Vercel` : _React Server Components allow you to write UI that can be rendered and optionally cached on the server. In Server Components, component logic such as data fetching and database mutations is executed exclusively on the server_
 
 ```tsx
 export default function ReactServerComponent() {
@@ -46,9 +46,9 @@ Fichiers
 
 ### 1. 🚀 Convertir le composant en RCC (React Client Component)
 
-Par défaut les composants Next sont des RSC, mais dans certains cas nous avons besoins de composants RCC. Ce sont par exemple les composants qui ont besoin d’interaction utilisateur. 
+Par défaut les composants Next sont des RSC, mais dans certains cas nous avons besoins de composants RCC. Ce sont par exemple les composants qui ont besoin d’interaction utilisateur.
 
-🐶 Ajoute `onClick={() => alert("Hello")}` sur la `<div>` principale du composant. 
+🐶 Ajoute `onClick={() => alert("Hello")}` sur la `<div>` principale du composant.
 
 - Constate l’erreur et corrige la, à l’aide de la directive `'use client'`
 
@@ -66,7 +66,7 @@ Fichiers
 
 - `exercise/about/page.exercice`
 
-📑 Lien explication Dan Abramov  [https://github.com/reactwg/server-components/discussions/4](https://github.com/reactwg/server-components/discussions/4)
+📑 Lien explication Dan Abramov [https://github.com/reactwg/server-components/discussions/4](https://github.com/reactwg/server-components/discussions/4)
 
 ## Aller plus loin
 
@@ -76,11 +76,11 @@ Fichiers
 
 ## Ils vont t’aider
 
-- **🐶  Mowgli le Chien** : *Mowgli te guidera dans chaque exercice.*
-- **🤖  Ash le Robot** : *Ash le Robot te donnera du code utile.*
-- **🚀 Julia La roquette** : *Julia te donnera des défis supplémentaires.*
-- **⛏️ Hulk le Marteau** : *Quand du code à supprimer est présent*
-- **👨‍✈️ Hugo le chef de projet** : *Va t'aider sur les spécifications du projet*
+- **🐶 Mowgli le Chien** : _Mowgli te guidera dans chaque exercice._
+- **🤖 Ash le Robot** : _Ash le Robot te donnera du code utile._
+- **🚀 Julia La roquette** : _Julia te donnera des défis supplémentaires._
+- **⛏️ Hulk le Marteau** : _Quand du code à supprimer est présent_
+- **👨‍✈️ Hugo le chef de projet** : _Va t'aider sur les spécifications du projet_
 
 ## 🐜 Feedback
 
