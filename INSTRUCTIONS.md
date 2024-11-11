@@ -8,28 +8,28 @@ Détaille ce que tu as appris ici, sur une page [Notion](https://go.mikecode
 
 ## Comprendre
 
-Lorsque l’on navigue sur un site, il y a souvent une structure commune (exemple, `menu`, `footer`, etc …) et du contenu qui change. Comme nous ne voulons pas avoir à tout recréer à chaque route, il est possible d’utiliser un `Layout`. 
+Lorsque l’on navigue sur un site, il y a souvent une structure commune (exemple, `menu`, `footer`, etc …) et du contenu qui change. Comme nous ne voulons pas avoir à tout recréer à chaque route, il est possible d’utiliser un `Layout`.
 
 - Un `Layout` est une interface partagée entre plusieurs routes
 - Un `Layout` est un composant qui affiche un composant enfant `children`
 
 ```tsx
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   return (
     <div>
-	    <h1>Mon site</h1>
+      <h1>Mon site</h1>
       {children}
       <footer>2024</footer>
     </div>
-  );
-};
+  )
+}
 ```
 
 📑 Le lien vers la doc [https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#layouts)
 
 ## Exercice
 
-Précédemment nous avons créé les routes 
+Précédemment nous avons créé les routes
 
 - `/exercise/about`
 - `/exercise/account/details`
@@ -37,7 +37,7 @@ Précédemment nous avons créé les routes
 - `/exercise/account/profile/password`
 - `/exercise/account/profile/reset`
 
-🐶 Dans cet exercice tu vas devoir créer un `Layout` commun à toutes ces routes  
+🐶 Dans cet exercice tu vas devoir créer un `Layout` commun à toutes ces routes
 
 Fichiers
 
@@ -61,11 +61,11 @@ Fichiers
 
 ## Ils vont t’aider
 
-- **🐶  Mowgli le Chien** : *Mowgli te guidera dans chaque exercice.*
-- **🤖  Ash le Robot** : *Ash le Robot te donnera du code utile.*
-- **🚀 Julia La roquette** : *Julia te donnera des défis supplémentaires.*
-- **⛏️ Hulk le Marteau** : *Quand du code à supprimer est présent*
-- **👨‍✈️ Hugo le chef de projet** : *Va t'aider sur les spécifications du projet*
+- **🐶 Mowgli le Chien** : _Mowgli te guidera dans chaque exercice._
+- **🤖 Ash le Robot** : _Ash le Robot te donnera du code utile._
+- **🚀 Julia La roquette** : _Julia te donnera des défis supplémentaires._
+- **⛏️ Hulk le Marteau** : _Quand du code à supprimer est présent_
+- **👨‍✈️ Hugo le chef de projet** : _Va t'aider sur les spécifications du projet_
 
 ## 🐜 Feedback
 
