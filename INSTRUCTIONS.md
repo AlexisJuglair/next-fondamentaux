@@ -8,7 +8,7 @@ Détaille ce que tu as appris ici, sur une page [Notion](https://go.mikecode
 
 ## Comprendre
 
-Pour faire des liens en HTML nous utilisons la balise `<a>` . Exemple 
+Pour faire des liens en HTML nous utilisons la balise `<a>` . Exemple
 
 ```html
 <a href="/login">login</a>
@@ -18,21 +18,21 @@ Pour faire des liens en HTML nous utilisons la balise `<a>` . Exemple
 
 Avec `React` nous souhaitons avoir une navigation fluide, c’est à dire ne pas avoir à rechercher la page, on parle de SPA (Single Page Application)
 
-Pour garder ce concept, il faut pouvoir naviguer sans avoir à recharger la page au complet. 
+Pour garder ce concept, il faut pouvoir naviguer sans avoir à recharger la page au complet.
 
 - Sur les projets React sans Framework on peut utiliser la librairie `react-router-dom` qui contient un composant `Link`
 
 ```tsx
-import { Link } from "react-router-dom"
+import {Link} from 'react-router-dom'
 
-<Link to="/login">Login</Link>
+;<Link to="/login">Login</Link>
 ```
 
 - Comme Next utilise son propre router, il fournit également son propre composant `Link` qui permet de garder le principe de SPA ainsi que d’autres optimisations / `prefetch` etc …
 
 ```tsx
 import Link from 'next/link'
- 
+
 function Home() {
   return (
     <ul>
@@ -48,11 +48,9 @@ function Home() {
     </ul>
   )
 }
- 
+
 export default Home
 ```
-
- 
 
 ## Exercice
 
@@ -89,11 +87,11 @@ Fichiers
 
 ## Ils vont t’aider
 
-- **🐶  Mowgli le Chien** : *Mowgli te guidera dans chaque exercice.*
-- **🤖  Ash le Robot** : *Ash le Robot te donnera du code utile.*
-- **🚀 Julia La roquette** : *Julia te donnera des défis supplémentaires.*
-- **⛏️ Hulk le Marteau** : *Quand du code à supprimer est présent*
-- **👨‍✈️ Hugo le chef de projet** : *Va t'aider sur les spécifications du projet*
+- **🐶 Mowgli le Chien** : _Mowgli te guidera dans chaque exercice._
+- **🤖 Ash le Robot** : _Ash le Robot te donnera du code utile._
+- **🚀 Julia La roquette** : _Julia te donnera des défis supplémentaires._
+- **⛏️ Hulk le Marteau** : _Quand du code à supprimer est présent_
+- **👨‍✈️ Hugo le chef de projet** : _Va t'aider sur les spécifications du projet_
 
 ## 🐜 Feedback
 
